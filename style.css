@@ -1,0 +1,251 @@
+* {
+    box-sizing: border-box;
+}
+
+#finalPage {
+    display: none;
+    text-align: center;
+    width: 90%;
+    max-width: 600px;
+    padding: 40px 0;
+}
+
+#finalPage img {
+    width: 250px;
+    border-radius: 20px;
+}
+
+#finalPage h1 {
+    font-size: 55px;
+    margin: 25px 0;
+}
+
+#finalPage > p {
+    font-size: 24px;
+}
+
+.dateCard {
+    background-color: white;
+    border-radius: 25px;
+    padding: 20px;
+    margin: 30px auto;
+    max-width: 450px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+.dateCard p {
+    font-size: 22px;
+    margin: 18px 0;
+}
+
+.loveNote {
+    line-height: 1.5;
+    font-style: italic;
+}
+
+#lockButton {
+    display: none;
+    margin-top: 10px;
+    padding: 18px 35px;
+    font-size: 24px;
+    font-weight: bold;
+    border: none;
+    border-radius: 30px;
+    background-color: #ff4081;
+    color: white;
+    cursor: pointer;
+    box-shadow: 0 8px 20px rgba(255, 64, 129, 0.3);
+}
+
+#thirdPage {
+    display: none;
+    text-align: center;
+    width: 90%;
+    max-width: 600px;
+    align-self: flex-start;
+    padding-top: 50px;
+}
+
+#thirdPage h1 {
+    font-size: 55px;
+    margin-bottom: 10px 0 45px;
+}
+
+#thirdPage img {
+    width: 300px;
+    border-radius: 25px;
+    margin-bottom: 20px;   
+}
+
+.dateOption {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.dateOption label {
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+
+#date,
+#time {
+    width: 400px;
+    height: 80px;
+    padding: 20px 25px;
+    font-size: 30px;
+    border: none;
+    border-radius: 15px;
+}
+
+#vibe,
+#food {
+    width: 400px;
+    height: 80px;
+    padding: 20px 25px;
+    font-size: 30px;
+    border: none;
+    border-radius: 15px;
+    background-color: white;
+}
+
+#secondPage {
+    display: none;
+    text-align: center;
+}
+
+#secondPage img {
+    width: 300px;
+    border-radius: 25px;
+    margin-bottom: 20px;
+}
+
+#secondPage h1 {
+    color: #ff4081;
+    font-size: 80px;
+    margin: 10px 0;
+}
+
+#secondPage p {
+    color: #555;
+    font-size: 40px;
+    margin: 12px 0;
+}
+
+#planButton {
+    display: none;
+
+    margin-top: 30px;
+    padding: 25px 40px;
+    font-size: 30px;
+    font-weight: bold;
+    border: none;
+    border-radius: 30px;
+    background-color: #ff4081;
+    color: white;
+    cursor: pointer;
+}
+
+.heart {
+    position: fixed;
+    bottom: -150px;
+    font-size: 50px;
+    animation: floatHeart 3s linear forwards;
+}
+
+@keyframes floatHeart {
+    from {
+        transform: translateY(0);
+        opacity: 1;
+    }
+
+    to {
+        transform: translateY(-100vh);
+        opacity: 0;
+    }
+}
+
+.confetti {
+    position: fixed;
+    width: 25px;
+    height: 25px;
+    pointer-events: none;
+}
+
+.confetti.square {
+    border-radius: 1px;
+}
+
+.confetti.circle {
+    border-radius: 50%;
+}
+
+.confetti.rectangle {
+    width: 15px;
+    height: 35px;
+}
+
+body {
+    margin: 0;
+    background-color: #ffe6ef;
+    min-height: 100vh;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    font-family: "Georgia", serif;
+}
+
+img {
+    width: 350px;
+    border-radius: 20px;
+}
+
+.container {
+    width: 90%;
+    max-width: 600px;
+    text-align: center;
+}
+
+h1 {
+    color: #ff4081;
+    font-size: 50px;
+    margin: 30px 0 40px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.Button {
+    width: 150px;
+    height: 80px;
+
+    font-size: 28px;
+    font-weight: bold;
+
+    cursor: pointer;
+
+    border: none;
+    border-radius: 35px;
+
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+#yesButton {
+    background-color: #ff4081;
+    color: white;
+    box-shadow: 0 8px 20px rgba(255, 64, 129, 0.3);
+}
+
+#noButton {
+    background-color: white;
+    color: #333;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.Button:hover {
+    transform: scale(1.05);
+}

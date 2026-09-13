@@ -1,0 +1,79 @@
+<!DOCTYPE html> 
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Go out with me?</title>
+    <link rel="stylesheet" href="style.css?v=39">
+</head>
+<body>
+    <div class="container">
+	<img src="date.gif" alt="Cute couple">
+        <h1 id="question">Will you go out with me?</h1>
+        <div class="buttons">
+            <button id="yesButton" class="Button">Yes!</button>
+            <button id="noButton" class="Button">No</button>
+        </div>
+    </div>
+    <div id="secondPage">
+        <img src="couple.gif" alt="Cute couple">
+        <h1>YAYYY! ❤️</h1>
+        <p>You just made me the happiest person ever! 🥰</p>
+        <p>Looks like it's a date! 💕</p>
+	<button id="planButton">Plan our date →</button>
+    </div>
+    <div id="thirdPage">
+        <h1>Let's plan our date ❤️</h1>
+	<img src="bubu.gif" alt="Cute couple">
+	<div class="dateOption">
+            <label for="date">Pick a date:</label>
+            <input type="date" id="date">
+	</div>
+	<div class="dateOption">
+	    <label for="time">Pick a time:</label>
+	    <input type="time" id="time">
+	</div>
+	<div class="dateOption">
+	    <label for="vibe">What kind of date do you want?</label>
+	    <select id="vibe">
+        	<option value="">Choose a vibe</option>
+	        <option value="romantic">Romantic ❤️</option>
+        	<option value="cute">Cute & Cozy 🧸</option>
+	        <option value="fun">Fun & Chaotic 😂</option>
+	        <option value="adventure">Adventure 🌄</option>
+        	<option value="chill">Chill & Relaxing 🌸</option>
+	    </select>
+	</div>
+	<div class="dateOption">
+	    <label for="food">What would you like to eat?</label>
+	    <select id="food">
+        	<option value="">Choose your food</option>
+	        <option value="pizza">Pizza 🍕</option>
+	        <option value="burger">Burger 🍔</option>
+	        <option value="momos">Momos 🥟</option>
+	        <option value="chinese">Chinese 🍜</option>
+	        <option value="dessert">Dessert 🍰</option>
+	        <option value="anything">Surprise me 😋</option>
+	    </select>
+	</div>
+	<button id="lockButton">Lock it in ❤️</button>
+    </div>
+    <div id="finalPage">
+        <img src="couple.gif" alt="Cute couple">
+        <h1>It's a Date! ❤️</h1>
+        <p>Our little plan is officially locked in. 🥰</p>
+        <div class="dateCard">
+            <p>📅 <strong>Date:</strong> <span id="finalDate"></span></p>                          
+	    <p>🕐 <strong>Time:</strong> <span id="finalTime"></span></p>
+            <p>💕 <strong>Vibe:</strong> <span id="finalVibe"></span></p>                           
+	    <p>🍴 <strong>Food:</strong> <span id="finalFood"></span></p>
+        </div>                                                                                  
+	<p class="loveNote">
+            I don't know where this little adventure takes us,
+            but I'm really happy that it's with you. ❤️
+        </p>
+    </div>
+    <script src="script.js?v=3"></script>
+</body>
+</html>
+
+
