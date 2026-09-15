@@ -20,17 +20,39 @@ const finalFood = document.getElementById("finalFood");
 
 lockButton.addEventListener("click", () => {
 
-    thirdPage.style.display = "none";
-    finalPage.style.display = "block";
+    const date = dateInput.value;
+    const time = timeInput.value;
+    const vibe = vibeInput.options[vibeInput.selectedIndex].text;
+    const food = foodInput.options[foodInput.selectedIndex].text;
 
-    finalDate.textContent = dateInput.value;
-    finalTime.textContent = timeInput.value;
+    fetch("http://localhost:3000/submit", {
+        method: "POST",
 
-    finalVibe.textContent =
-        vibeInput.options[vibeInput.selectedIndex].text;
+        headers: {
+            "Content-Type": "application/json"
+        },
 
-    finalFood.textContent =
-        foodInput.options[foodInput.selectedIndex].text;
+        body: JSON.stringify({
+            date: date,
+            time: time,
+            vibe: vibe,
+            food: food
+        })
+    })
+    .then(response => response.json())
+    .then(data => {
+        console.log("Server response:", data);
+        thirdPage.style.display = "none";
+        finalPage.style.display = "block";
+        finalDate.textContent = date;
+        finalTime.textContent = time;
+        finalVibe.textContent = vibe;
+	finalFood.textContent = food;
+    })
+    .catch(error => {
+        console.error("Error sending data:", error);
+        alert("Something went wrong. Please try again ❤️");
+    });
 });
 
 setTimeout(() => {
