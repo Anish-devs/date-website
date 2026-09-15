@@ -209,17 +209,3 @@ function createConfetti(x, y) {
         confetti.remove();
     }, 1000);
 }
-
-
-fetch("http://localhost:3000/submit", {
-    method: "POST",
-    headers: {
-        "Content-Type": "application/json"
-    },
-    body: JSON.stringify({
-        date: "2026-09-20",
-        time: "18:00",
-        vibe: "Romantic",
-        food: "Pizza"
-    })
-});
