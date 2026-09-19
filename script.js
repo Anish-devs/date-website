@@ -25,7 +25,7 @@ lockButton.addEventListener("click", () => {
     const vibe = vibeInput.options[vibeInput.selectedIndex].text;
     const food = foodInput.options[foodInput.selectedIndex].text;
 
-    fetch("http://localhost:3000/submit", {
+    fetch("https://date-backend-jsj9.onrender.com/submit", {
         method: "POST",
 
         headers: {
